@@ -6,12 +6,12 @@ name: Deploy Dots QA
 # events but only for the master branch
 on:
   push:
-    tags: [ dots-qa ]
+    tags:
+      - dots-qa
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "Deploy"
-  working-directory: packages/dots
   Deploy:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -23,8 +23,10 @@ jobs:
 
     # Builds the app
     - name: Build
+      working-directory: packages/dots
       run: echo Building Dots!
 
     # Deploys the app
     - name: Deploy
+      working-directory: packages/dots
       run: echo Deploying Dots to QA!!
