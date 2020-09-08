@@ -24,9 +24,9 @@ jobs:
     # Builds the app
     - name: Build
       working-directory: packages/dots
-      run: echo Building Dots!
+      run: yarn build
 
     # Deploys the app
     - name: Deploy
       working-directory: packages/dots
-      run: echo Deploying Dots to QA!!
+      run: yarn deploy

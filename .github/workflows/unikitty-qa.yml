@@ -24,9 +24,9 @@ jobs:
     # Builds the app
     - name: Build
       working-directory: packages/unikitty
-      run: echo Building Unikitty!
+      run: yarn build
 
     # Deploys the app
     - name: Deploy
       working-directory: packages/unikitty
-      run: echo Deploying Unikitty to QA!!
+      run: yarn deploy

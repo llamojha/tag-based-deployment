@@ -24,9 +24,9 @@ jobs:
     # Builds the app
     - name: Build
       working-directory: packages/ninjago
-      run: echo Building Ninjago!
+      run: yarn build
 
     # Deploys the app
     - name: Deploy
       working-directory: packages/ninjago
-      run: echo Deploying Ninjago to QA!!
+      run: yarn deploy
