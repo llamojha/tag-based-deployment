@@ -4,5 +4,8 @@
     "packages": [
       "packages/*"
     ]
+  },
+  "devDependencies": {
+    "serverless": "^2.1.1"
   }
 }
