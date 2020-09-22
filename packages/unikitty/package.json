@@ -1,5 +1,9 @@
 {
   "name": "@tag-based-deployments/unikitty",
   "version": "0.0.2",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "yarn install",
+    "deploy": "sls deploy"
+  }
 }
