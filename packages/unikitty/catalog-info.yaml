@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: unikitty
+  description: Any Idea is a Good Idea, Expect the Not-Happy ones
+spec:
+  type: service
+  lifecycle: production
+  owner: lego-unicorn-team

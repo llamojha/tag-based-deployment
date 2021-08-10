@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ninjago
+  description: Ninjas GO!
+spec:
+  type: service
+  lifecycle: production
+  owner: lego-ninja-team
