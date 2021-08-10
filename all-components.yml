@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: xtra-components
+  description: A collection of all Backstage xtra components
+spec:
+  targets:
+    - ./packages/dots/catalog-info.yaml
+    - ./packages/ninjago/catalog-info.yaml
+    - ./packages/unikitty/catalog-info.yaml
