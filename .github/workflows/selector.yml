@@ -13,5 +13,7 @@ jobs:
     container: bitnami/git:latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install git
+      run: sudo apt-get install -y git
     - name: Run selector
       run: bash selector.sh
